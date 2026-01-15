@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/photon-geocoder-autocomplete.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/photon-geocoder-autocomplete.min.js"></script>
+        <script src="layers/39_Domenica_13_07_20_43_1.js"></script><script src="layers/38_Domenica_05_30_13_06_2.js"></script><script src="layers/37_Domenica_19_00_02_36_3.js"></script><script src="layers/34_Domenica_21_50_05_26_4.js"></script><script src="layers/33_Domenica_09_30_15_50_5.js"></script><script src="layers/39_Sabato_13_07_20_43_6.js"></script><script src="layers/38_Sabato_05_30_13_06_7.js"></script><script src="layers/37_Sabato_19_00_02_36_8.js"></script><script src="layers/34_Sabato_21_50_05_26_9.js"></script><script src="layers/33_Sabato_09_30_15_50_10.js"></script><script src="layers/39_Venerdi_13_07_20_43_11.js"></script><script src="layers/38_Venerdi_05_30_13_06_12.js"></script><script src="layers/37_Venerdi_19_00_02_36_13.js"></script><script src="layers/34_Venerdi_21_50_05_26_14.js"></script><script src="layers/33_Venerdi_09_30_15_50_15.js"></script><script src="layers/39_Giovedi_13_07_20_43_16.js"></script><script src="layers/38_Giovedi_05_30_13_06_17.js"></script><script src="layers/37_Giovedi_19_00_02_36_18.js"></script><script src="layers/34_Giovedi_21_50_05_26_19.js"></script><script src="layers/33_Giovedi_09_30_15_50_20.js"></script><script src="layers/39_Mercoledi_13_07_20_43_21.js"></script><script src="layers/38_Mercoledi_05_30_13_06_22.js"></script><script src="layers/37_Mercoledi_19_00_02_36_23.js"></script><script src="layers/34_Mercoledi_21_50_05_26_24.js"></script><script src="layers/33_Mercoledi_09_30_15_50_25.js"></script><script src="layers/39_Martedi_13_07_20_43_26.js"></script><script src="layers/38_Martedi_05_30_13_06_27.js"></script><script src="layers/37_Martedi_19_00_02_36_28.js"></script><script src="layers/34_Martedi_21_50_05_26_29.js"></script><script src="layers/33_Martedi_09_30_15_50_30.js"></script><script src="layers/39_Lunedi_13_07_20_43_31.js"></script><script src="layers/38_Lunedi_05_30_13_06_32.js"></script><script src="layers/37_Lunedi_19_00_02_36_33.js"></script><script src="layers/34_Lunedi_21_50_05_26_34.js"></script><script src="layers/33_Lunedi_09_30_15_50_35.js"></script>
+        <script src="styles/39_Domenica_13_07_20_43_1_style.js"></script><script src="styles/38_Domenica_05_30_13_06_2_style.js"></script><script src="styles/37_Domenica_19_00_02_36_3_style.js"></script><script src="styles/34_Domenica_21_50_05_26_4_style.js"></script><script src="styles/33_Domenica_09_30_15_50_5_style.js"></script><script src="styles/39_Sabato_13_07_20_43_6_style.js"></script><script src="styles/38_Sabato_05_30_13_06_7_style.js"></script><script src="styles/37_Sabato_19_00_02_36_8_style.js"></script><script src="styles/34_Sabato_21_50_05_26_9_style.js"></script><script src="styles/33_Sabato_09_30_15_50_10_style.js"></script><script src="styles/39_Venerdi_13_07_20_43_11_style.js"></script><script src="styles/38_Venerdi_05_30_13_06_12_style.js"></script><script src="styles/37_Venerdi_19_00_02_36_13_style.js"></script><script src="styles/34_Venerdi_21_50_05_26_14_style.js"></script><script src="styles/33_Venerdi_09_30_15_50_15_style.js"></script><script src="styles/39_Giovedi_13_07_20_43_16_style.js"></script><script src="styles/38_Giovedi_05_30_13_06_17_style.js"></script><script src="styles/37_Giovedi_19_00_02_36_18_style.js"></script><script src="styles/34_Giovedi_21_50_05_26_19_style.js"></script><script src="styles/33_Giovedi_09_30_15_50_20_style.js"></script><script src="styles/39_Mercoledi_13_07_20_43_21_style.js"></script><script src="styles/38_Mercoledi_05_30_13_06_22_style.js"></script><script src="styles/37_Mercoledi_19_00_02_36_23_style.js"></script><script src="styles/34_Mercoledi_21_50_05_26_24_style.js"></script><script src="styles/33_Mercoledi_09_30_15_50_25_style.js"></script><script src="styles/39_Martedi_13_07_20_43_26_style.js"></script><script src="styles/38_Martedi_05_30_13_06_27_style.js"></script><script src="styles/37_Martedi_19_00_02_36_28_style.js"></script><script src="styles/34_Martedi_21_50_05_26_29_style.js"></script><script src="styles/33_Martedi_09_30_15_50_30_style.js"></script><script src="styles/39_Lunedi_13_07_20_43_31_style.js"></script><script src="styles/38_Lunedi_05_30_13_06_32_style.js"></script><script src="styles/37_Lunedi_19_00_02_36_33_style.js"></script><script src="styles/34_Lunedi_21_50_05_26_34_style.js"></script><script src="styles/33_Lunedi_09_30_15_50_35_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>        
+    </body>
+</html>
